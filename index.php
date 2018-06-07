@@ -79,7 +79,7 @@ crossorigin="anonymous">
             </col-sm>
         </div>
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-6 mt-5">
                 <p>
                         L'ASBL Les Meubles Du Coeur est une association à but
                         non lucratif. <br/>
@@ -145,7 +145,6 @@ crossorigin="anonymous">
         <!-- Nos action -->
         <div class="row">
                 <div class="col-sm">
-                    <h3>Les meubles du coeur</h3>
                     <h2 id="nosAction">NOS ACTIONS</h2>
                 </div>
         </div>
@@ -235,7 +234,7 @@ crossorigin="anonymous">
 
     <!-- Footer + info +contact + iframe -->
     <footer>
-        <div class="container-fluid pl-5 py-3 bg-danger">
+        <div class="container-fluid pl-5 py-3" id="bg-footer">
             <div class="row">
                 <div class="col-md-5">
                     <h1 id="contact">Contact</h1>
@@ -266,7 +265,7 @@ crossorigin="anonymous">
                                 <button type="submit" name="send" class="btn btn-primary pull-right" id="btnContactUs">
                                     Send Message
                                 </button>
-
+                                  <?php include('assets/controler.php');?>
                         </form>
                     </div>
                 </div>

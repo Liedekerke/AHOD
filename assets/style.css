@@ -189,3 +189,8 @@ button{
   width: 300px;
   padding: 20px;
 }
+
+#bg-footer {
+  background-color: black;
+  
+}
