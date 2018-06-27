@@ -21,74 +21,56 @@
 <body>
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom bg-dark ">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Meublesducoeur.be</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#acceuil">Acceuil<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#Annexe">Annexe</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link " href="#nosAction">Nos Actions</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link " href="#boutique">Boutique</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link " href="#contact">Contact</a>
-                    </li>   
-                </ul>
-            </div>
-
-            <a class="navbar-brand" href="#"><img src="assets/logo.png" id="logo" alt=""> </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#acceuil">Acceuil<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link " href="#nosAction">Nos Actions</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link " href="#boutique">Boutique</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link " href="#contact">Contact</a>
-                    </li>
-                </ul>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-dark navbar-custom bg-dark ">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"><img class="float-left mr-1" src="assets/logo.png" id="logo" alt=""> Meubles du coeur</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarResponsive">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#acceuil">Acceuil<span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link " href="#nosAction">Nos Actions</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link " href="#boutique">Boutique</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link " href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </div>
-    </nav>
+    </div>
 
     <!-- caroussel -->
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm">
-                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" data-interval="100" data-wrap="false">
+            <div class="col-md">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" data-interval="1000" data-wrap="false">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="animation_text">
                                 <h1 class="firstsentence">LES RIVIÈRES SONT FAITES DE PETITES GOUTTES</h1>
                                 <button class="button"><i class="fas fa-shopping-cart"></i> Donation</button>
                             </div>
-                            <img class="d-block w-100 h-25" src="assets/slide1.jpg" alt="First slide">
+                            <img class="d-block carouselImage" src="assets/slide1.jpg" alt="First slide">
                         </div>
                         <div class="carousel-item">
                                 <div class="animation_text">
                                     <h1 class="firstsentence">LES RIVIÈRES SONT FAITES DE PETITES GOUTTES</h1>
                                     <button class="button"><i class="fas fa-shopping-cart"></i> Donation</button>
                                 </div>
-                            <img class="d-block w-100 h-25" src="assets/slide2.jpg" alt="Second slide">
+                            <img class="d-block carouselImage" src="assets/slide2.jpg" alt="Second slide">
 
                         </div>
                     </div>
@@ -108,12 +90,10 @@
     <!-- acceuil   -->
     <div class="container">
         <div class="row">
-            <col-sm>
-
+            <div class="col-sm bg-danger ">
                 <h3 id="acceuil">Association</h3>
                 <h1>LES MEUBLES DU COEUR</h1>
-
-            </col-sm>
+            </div>
         </div>
         <div class="row">
             <div class="col-sm-6 mt-5">
@@ -133,7 +113,7 @@
                 </p>
             </div>
             <div class="col-sm-6">
-                <h2>Un autre regard...</h2>
+                <h2 class="">Un autre regard...</h2>
                 <p>
                     En fondant Les Meubles du Coeur, nous souhaitions aborder
                      le métier
@@ -159,7 +139,7 @@
         </div>
         <!-- annexe -->
         <div class="row">
-            <div class="col-sm">
+            <div class="col-md">
 
                 <h3 id="Annexe">L'annexe</h3>
 
@@ -183,13 +163,23 @@
 
         <!-- Nos action -->
         <div class="row">
-                <div class="col-sm">
+                <div class="col-md">
                     <h3>Les meubles du coeur</h3>
                     <h2 id="nosAction">NOS ACTIONS</h2>
                 </div>
         </div>
         <div class="row">
-                <div class="col-sm-4">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">VIDE MAISON</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        <img class="card-img-top" class="actionImage" src="assets/action-vide-maison.jpg" alt="Card image cap">
+                    </div>
+                </div>
+            </div>
+                <!-- <div class="col-md-4">
                     <h2>VIDE MAISON</h2>
                     <p class="paragraphAction">
                             Service - Convivialité - Utilité
@@ -197,8 +187,8 @@
                     <div>
                         <img class="actionImage" src="assets/action-vide-maison.jpg" alt="vide-maison">
                     </div>
-                </div>
-                <div class="col-sm-4">
+                </div> -->
+                <div class="col-md-4">
                     <h2>RESTAURATION
                         </h2>
                     <p class="paragraphAction">
@@ -208,7 +198,7 @@
                         <img class="actionImage" src="assets/action-resto.jpg" alt="resto">
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-4">
                     <h2>REDISTRIBUTION
                         </h2>
                     <p class="paragraphAction">
@@ -228,7 +218,7 @@
     <div class="container" id="boutique">
 
         <div class="row">
-            <div class="col-sm-3">
+            <div class="col-md-3">
                 <div class="row">
                     <div class="col-sm-10">
                         <div class="titreBoutique">Mobilier</div>
@@ -238,7 +228,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-md-3">
                 <div class="row">
                     <div class="col-sm-10">
                         <div class="titreBoutique">Salons</div>
@@ -250,7 +240,7 @@
             </div>
             <div class="col-sm-3">
                 <div class="row">
-                    <div class="col-sm-10">
+                    <div class="col-md-10">
                         <div class="titreBoutique">Luminaires</div>
                         <div>
                                 <img class="imgBoutique"src="assets/boutique-luminaire.jpg" alt="luminaire">
@@ -258,9 +248,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-md-3">
                 <div class="row">
-                    <div class="col-sm-10">
+                    <div class="col-md-10">
                         <div class="titreBoutique">Décoration</div>
                         <div>
                                 <img class="imgBoutique" src="assets/boutique-décoration.jpg" alt="decoration">
@@ -279,7 +269,7 @@
             <div class="row">
                 <div class="col-md-5">
                     <h1 id="contact">Contact</h1>
-                    <div class="well well-sm">
+                    <div class="well well-md">
                         <form action="controler.php" method="post" id="form">
 
                             <div class="form-group">
@@ -310,10 +300,10 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-sm-col1">
+                <div class="col-md-col1">
 
                 </div>
-                <div class="col-sm-4 offset-sm-2">
+                <div class="col-md-4 offset-sm-2">
                     <div class="socialContact pt-4">
                         <i class="fab fa-facebook-square fa-2x">
                             <a href="https://www.facebook.com/meublesducoeur/" target="_blank">Facebook</a>
@@ -337,17 +327,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <script>
-            if ('serviceWorker' in navigator) {
-              window.addEventListener('load', function() {
-                navigator.serviceWorker.register('service-worker.js').then(function(registration) {
-                  // Registration was successful
-                  console.log('ServiceWorker registration successful with scope: ', registration.scope);
-                }, function(err) {
-                  // registration failed :(
-                  console.log('ServiceWorker registration failed: ', err);
-                });
-              });
-            }
+        // if ('serviceWorker' in navigator) {
+        //     window.addEventListener('load', function() {
+        //     navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+        //         // Registration was successful
+        //         console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        //     }, function(err) {
+        //         // registration failed :(
+        //         console.log('ServiceWorker registration failed: ', err);
+        //     });
+        //     });
+        // }
+        // function validateForm() {
+        //     var x = document.forms["myForm"]["fname"].value;
+        //     if (x == "") {
+        //         alert("Name must be filled out");
+        //         return false;
+        //     }
+        // }
     </script>
 </body>
 </html>

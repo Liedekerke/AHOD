@@ -1,24 +1,24 @@
 body {
     font-family: 'Raleway', sans-serif;
     margin-right:0;
-<<<<<<< HEAD
 	padding-right:0;
-	background-color: black;
-=======
-    padding-right:0;
->>>>>>> 432f24cd466eccf92e0d9a06aed70862a32a8641
+	background-color: white;
+	width: 100%;
 }
 
+
 .firstsentence {
-    margin-left:80px;
+    margin-left:500px;
     text-align:center;
     animation-name:text1;
-    animation-duration:2s;
+	animation-duration:2s;
+	color: white;
+	font-weight: bolder;
 }
 
 button{
     text-align:center;
-    margin-left:450px;
+    margin-left:800px;
     border:none;
 }
 
@@ -40,14 +40,16 @@ button{
 
 .animation_text {
     margin-top:300px;
-    position:absolute;
+	position:absolute;
+	-webkit-animation: tracking-in-contract 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) forwards;
+	        animation: tracking-in-contract 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) forwards;
 }
 
-.container-fluid{
+/* .container-fluid{
     padding:0;
-}
-
-@-webkit-keyframes text1 {
+} */
+/* animation by jordan   */
+/* @-webkit-keyframes text1 {
     0% {
         opacity: 0;
     }
@@ -61,11 +63,6 @@ button{
 		opacity: 0;
 		-webkit-transform: translateY(-20px);
 	}
-<<<<<<< HEAD
-	
-=======
-
->>>>>>> 432f24cd466eccf92e0d9a06aed70862a32a8641
 	100% {
 		opacity: 1;
 		-webkit-transform: translateY(0);
@@ -77,27 +74,18 @@ button{
 		opacity: 0;
 		-moz-transform: translateY(-20px);
 	}
-<<<<<<< HEAD
-	
-=======
-
->>>>>>> 432f24cd466eccf92e0d9a06aed70862a32a8641
 	100% {
 		opacity: 1;
 		-moz-transform: translateY(0);
 	}
 }
 
+
 @-o-keyframes text1 {
 	0% {
 		opacity: 0;
 		-o-transform: translateY(-20px);
 	}
-<<<<<<< HEAD
-	
-=======
-
->>>>>>> 432f24cd466eccf92e0d9a06aed70862a32a8641
 	100% {
 		opacity: 1;
 		-o-transform: translateY(0);
@@ -109,11 +97,6 @@ button{
 		opacity: 0;
 		transform: translateY(-20px);
 	}
-<<<<<<< HEAD
-	
-=======
-
->>>>>>> 432f24cd466eccf92e0d9a06aed70862a32a8641
 	100% {
 		opacity: 1;
 		transform: translateY(0);
@@ -141,11 +124,6 @@ button{
 		opacity: 0;
 		-webkit-transform: translateY(20px);
 	}
-<<<<<<< HEAD
-	
-=======
-
->>>>>>> 432f24cd466eccf92e0d9a06aed70862a32a8641
 	100% {
 		opacity: 1;
 		-webkit-transform: translateY(0);
@@ -157,11 +135,6 @@ button{
 		opacity: 0;
 		-moz-transform: translateY(20px);
 	}
-<<<<<<< HEAD
-	
-=======
-
->>>>>>> 432f24cd466eccf92e0d9a06aed70862a32a8641
 	100% {
 		opacity: 1;
 		-moz-transform: translateY(0);
@@ -173,11 +146,6 @@ button{
 		opacity: 0;
 		-o-transform: translateY(20px);
 	}
-<<<<<<< HEAD
-	
-=======
-
->>>>>>> 432f24cd466eccf92e0d9a06aed70862a32a8641
 	100% {
 		opacity: 1;
 		-o-transform: translateY(0);
@@ -189,26 +157,49 @@ button{
 		opacity: 0;
 		transform: translateY(20px);
 	}
-<<<<<<< HEAD
-	
-=======
 
->>>>>>> 432f24cd466eccf92e0d9a06aed70862a32a8641
 	100% {
 		opacity: 1;
 		transform: translateY(0);
 	}
-}
+} */
 
-.button {
+/* .button {
 	-webkit-animation-name: text2;
 	-moz-animation-name: text2;
 	-o-animation-name: text2;
 	animation-name: text2;
-<<<<<<< HEAD
-}
-=======
-}
+
+} */
+/* animation by Momo */
+@-webkit-keyframes animation_text {
+	0% {
+	  letter-spacing: 1em;
+	  opacity: 0;
+	}
+	40% {
+	  opacity: 0.6;
+	}
+	100% {
+	  letter-spacing: normal;
+	  opacity: 1;
+	}
+  }
+  @keyframes tracking-in-contract {
+	0% {
+	  letter-spacing: 1em;
+	  opacity: 0;
+	}
+	40% {
+	  opacity: 0.6;
+	}
+	100% {
+	  letter-spacing: normal;
+	  opacity: 1;
+	}
+  }
+  
+
 #logo{
   height: 30px;
   width: 30px;
@@ -231,7 +222,11 @@ button{
 }
 
 #bg-footer {
-  background-color: black;
+  background-color: rgba(104, 87, 87, 0.295);
   
 }
->>>>>>> 432f24cd466eccf92e0d9a06aed70862a32a8641
+
+.carouselImage {
+	height: 800px;
+	width: 100%;
+}

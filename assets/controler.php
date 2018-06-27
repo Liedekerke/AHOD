@@ -1,5 +1,5 @@
 <?php
-
+/*
 $filtre = array(
     'name'  =>  FILTER_SANITIZE_STRING | FILTER_SANITIZE_SPECIAL_CHARS,
     'mail'  => FILTER_SANITIZE_STRING | FILTER_VALIDATE_EMAIL | FILTER_SANITIZE_SPECIAL_CHARS,
@@ -13,7 +13,7 @@ $message = trim($result["message"]);
 $send = trim($result["send"]);
 $headers = array(
     'From' => 'webmaster@example.com',
-    'Reply-To' => 'webmaster@example.com'
+    'Reply-To' => 'webmaster@example.com',
     'X-Mailer' => 'PHP/' . phpversion()
 );
 
@@ -22,3 +22,5 @@ if(isset($to) && !empty($to) && isset($mail) && !empty($mail) && isset($message)
 } else {
     echo '<script language="javascript">alert("Veuillez remplir les champs du formulaire SVP.")</script>';
 }
+*/
+?> 
