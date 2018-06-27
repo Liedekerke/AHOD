@@ -9,11 +9,12 @@ body {
 
 .firstsentence {
     margin-left:500px;
-    text-align:center;
+    /* text-align:center; */
     animation-name:text1;
 	animation-duration:2s;
 	color: white;
 	font-weight: bolder;
+	/* position: absolute; */
 }
 
 button{
@@ -210,10 +211,8 @@ button{
   padding: 20px;
 }
 
-.actionImage {
-  height: 200px;
-  width: 200px;
-  margin-bottom: 20px;
+#actionImage {
+	height: 200px;
 }
 .imgBoutique {
   height: 300px;
@@ -229,4 +228,6 @@ button{
 .carouselImage {
 	height: 800px;
 	width: 100%;
+	background-size: cover;
+	background-color: rgba(0, 0, 0, 1);
 }

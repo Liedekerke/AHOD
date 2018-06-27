@@ -33,16 +33,16 @@
                         <div class="collapse navbar-collapse" id="navbarResponsive">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="#acceuil">Acceuil<span class="sr-only">(current)</span></a>
+                                    <a class="nav-link px-5" href="#acceuil">Acceuil<span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item active">
-                                    <a class="nav-link " href="#nosAction">Nos Actions</a>
+                                    <a class="nav-link px-5" href="#nosAction">Nos Actions</a>
                                 </li>
                                 <li class="nav-item active">
-                                    <a class="nav-link " href="#boutique">Boutique</a>
+                                    <a class="nav-link px-5" href="#boutique">Boutique</a>
                                 </li>
                                 <li class="nav-item active">
-                                    <a class="nav-link " href="#contact">Contact</a>
+                                    <a class="nav-link px-5" href="#contact">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -56,19 +56,19 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md">
-                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" data-interval="1000" data-wrap="false">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" class="d-flex justify-content-center" data-ride="carousel" data-interval="1000" data-wrap="false">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="animation_text">
                                 <h1 class="firstsentence">LES RIVIÈRES SONT FAITES DE PETITES GOUTTES</h1>
-                                <button class="button"><i class="fas fa-shopping-cart"></i> Donation</button>
+                                <!-- <button class="button" id="button"><i class="fas fa-shopping-cart"></i> Donation</button> -->
                             </div>
                             <img class="d-block carouselImage" src="assets/slide1.jpg" alt="First slide">
                         </div>
                         <div class="carousel-item">
                                 <div class="animation_text">
                                     <h1 class="firstsentence">LES RIVIÈRES SONT FAITES DE PETITES GOUTTES</h1>
-                                    <button class="button"><i class="fas fa-shopping-cart"></i> Donation</button>
+                                    <button class="button" id="button"><i class="fas fa-shopping-cart"></i> Donation</button>
                                 </div>
                             <img class="d-block carouselImage" src="assets/slide2.jpg" alt="Second slide">
 
@@ -165,7 +165,7 @@
         <div class="row">
                 <div class="col-md">
                     <h3>Les meubles du coeur</h3>
-                    <h2 id="nosAction">NOS ACTIONS</h2>
+                    <h2 id="nosAction">NOS ACTIONS:</h2>
                 </div>
         </div>
         <div class="row">
@@ -179,6 +179,26 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">RESTAURATION</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        <img class="card-img-top" id="actionImage" src="assets/action-resto.jpg" alt="resto">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">REDISTRIBUTION</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        <img class="card-img-top" class="actionImage" src="assets/action-redistrubution.jpg" alt="redistrubution" alt="Card image cap">
+                    </div>
+                </div>
+            </div>
                 <!-- <div class="col-md-4">
                     <h2>VIDE MAISON</h2>
                     <p class="paragraphAction">
@@ -188,7 +208,7 @@
                         <img class="actionImage" src="assets/action-vide-maison.jpg" alt="vide-maison">
                     </div>
                 </div> -->
-                <div class="col-md-4">
+                <!-- <div class="col-md-4">
                     <h2>RESTAURATION
                         </h2>
                     <p class="paragraphAction">
@@ -206,8 +226,8 @@
                     </p>
                     <div>
                         <img class="actionImage" src="assets/action-redistrubution.jpg" alt="redistrubution">
-                    </div>
-                </div>
+                    </div> 
+                </div> -->
 
         </div>
 
@@ -271,7 +291,6 @@
                     <h1 id="contact">Contact</h1>
                     <div class="well well-md">
                         <form action="controler.php" method="post" id="form">
-
                             <div class="form-group">
                                 <label for="name">
                                     Name</label>
@@ -288,20 +307,18 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                    <label for="name">
-                                        Message</label>
-                                    <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
-                                        placeholder="Message"></textarea>
-                                </div>
+                                <label for="name">Message</label>
+                                <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                                    placeholder="Message">
+                                </textarea>
+                            </div>
                                 <button type="submit" name="send" class="btn btn-primary pull-right" id="btnContactUs">
                                     Send Message
-                                </button>
-                                
+                                </button>                              
                         </form>
                     </div>
                 </div>
-                <div class="col-md-col1">
-
+                <div class="col-md-1">
                 </div>
                 <div class="col-md-4 offset-sm-2">
                     <div class="socialContact pt-4">
@@ -321,30 +338,10 @@
             </div>
         </div>
     </footer>
-
+    <script src="script.js" type="text/javascript"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-    <script>
-        // if ('serviceWorker' in navigator) {
-        //     window.addEventListener('load', function() {
-        //     navigator.serviceWorker.register('service-worker.js').then(function(registration) {
-        //         // Registration was successful
-        //         console.log('ServiceWorker registration successful with scope: ', registration.scope);
-        //     }, function(err) {
-        //         // registration failed :(
-        //         console.log('ServiceWorker registration failed: ', err);
-        //     });
-        //     });
-        // }
-        // function validateForm() {
-        //     var x = document.forms["myForm"]["fname"].value;
-        //     if (x == "") {
-        //         alert("Name must be filled out");
-        //         return false;
-        //     }
-        // }
-    </script>
 </body>
 </html>
