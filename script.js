@@ -30,4 +30,9 @@ function validateForm() {
     }
 }
 
+let form = document.getElementById('form');
+let validation;
+form.addEventListener('click', () => {
+    validation = alert('Votre message a été enovyé');
+})
 
