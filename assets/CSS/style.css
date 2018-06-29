@@ -248,10 +248,19 @@ button {
 }
 
 .card-img-top {
-  width: 240px;
-  height: 240px;
+  width: 200px;
+  height: 200px;
 }
 
 /* .legum {
   padding: 10px;
 } */
+
+.btn-primary {
+  padding: 5px;
+}
+
+#nosAction {
+  font-size: 80px;
+  padding: 10px;
+}
