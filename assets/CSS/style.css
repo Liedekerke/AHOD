@@ -7,7 +7,7 @@ body {
 }
 
 .firstsentence {
-  margin-left: 500px;
+  margin-left: 800px;
   /* text-align: center; */
   animation-name: text1;
   animation-duration: 2s;
@@ -245,6 +245,7 @@ button {
 
 .titreBoutique {
   text-align: center;
+  margin: 10px;
 }
 
 .card-img-top {
@@ -257,14 +258,10 @@ button {
 } */
 
 .btn.btn-primary {
-  padding: 5px;
+  margin: 10px;
 }
 
 #nosAction {
-  font-weight: 500px;
-  padding: 10px;
-}
-
-.bg-danger {
-  background-color: none;
+  font-weight: 500;
+  margin: 10px;
 }
