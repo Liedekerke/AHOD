@@ -7,7 +7,7 @@ body {
 }
 
 .firstsentence {
-  margin-left: 800px;
+  margin-left: 140px;
   /* text-align: center; */
   animation-name: text1;
   animation-duration: 2s;
@@ -24,6 +24,7 @@ button {
 
 .button {
   text-align: center;
+  padding-left: 50%;
   animation-name: text2;
   animation-duration: 2s;
   border-radius: 30px;
