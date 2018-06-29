@@ -23,8 +23,8 @@ button {
 }
 
 .button {
-  text-align: center;
-  padding-left: 50%;
+  display: block;
+  margin: 0 auto;
   animation-name: text2;
   animation-duration: 2s;
   border-radius: 30px;
@@ -265,4 +265,9 @@ button {
 #nosAction {
   font-weight: 500;
   margin: 10px;
+}
+
+#carouselExampleFade {
+  margin-left: -15px;
+  margin-right: -15px;
 }
