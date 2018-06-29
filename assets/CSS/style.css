@@ -256,11 +256,15 @@ button {
   padding: 10px;
 } */
 
-.btn-primary {
+.btn.btn-primary {
   padding: 5px;
 }
 
 #nosAction {
-  font-size: 80px;
+  font-weight: 500px;
   padding: 10px;
+}
+
+.bg-danger {
+  background-color: none;
 }
